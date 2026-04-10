@@ -1,0 +1,18 @@
+[2026-04-10T05:30:13Z] === ENRICH ITERATION 4 START | repo=prettier/prettier sha=5b62d401 ===
+[2026-04-10T05:30:13Z] [iter=4] PHASE START: enrich repo=prettier/prettier sha=5b62d401 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/5b62d401-enrich-iter-004.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/5b62d401414b0e180005604dde7d360b7cee06f4.nq.gz
+[2026-04-10T05:31:08Z] [iter=4] Step 1: Loading AST into disk-backed store mem_mb=83 MB
+[2026-04-10T05:31:25Z] [iter=4] AST store loaded triples=2264375 load_secs=16 mem_mb=915 MB
+[2026-04-10T05:31:25Z] [iter=4] Step 2: Finding LSP targets mem_mb=915 MB
+[2026-04-10T05:31:26Z] [iter=4] LSP targets found call_sites=15109 imports=317 extends=202 implements=52 secs=1
+[2026-04-10T05:31:28Z] [iter=4] Loaded checkpoint partial graph triples=55117
+[2026-04-10T05:31:29Z] [iter=4] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=915 MB
+[2026-04-10T05:31:42Z] [iter=4] Position index built positions=162665 nodes_with_types=181674 secs=13 mem_mb=915 MB
+[2026-04-10T05:31:42Z] [iter=4] Step 3: Starting LSP resolution mem_mb=915 MB already_completed_types=[] already_completed_files=1500
+[2026-04-10T05:31:42Z] [iter=4] Resolving target type target_type=call_site count=15109
+[2026-04-10T05:31:42Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=1.5 files_done=0 resolved=0 errors=0 current=tests/typescript/custom/stability/jsfmt.spec.js
+[2026-04-10T05:32:13Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=2.0 files_done=127 resolved=7 errors=32 current=tests/export_default_ts/jsfmt.spec.js
+[2026-04-10T05:32:43Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=2.5 files_done=316 resolved=17 errors=64 current=tests/typescript/conformance/types/firstTypeNode/jsfmt.spec.js
+[2026-04-10T05:33:05Z] [iter=4] CHECKPOINT TRIGGERED elapsed_min=2.9 files_completed=2000 new_files_this_iter=500 mem_mb=915 MB
+[2026-04-10T05:33:05Z] [iter=4] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/5b62d401414b0e180005604dde7d360b7cee06f4.nq.gz triples=56387
+[2026-04-10T05:33:07Z] [iter=4] Checkpoint written, exiting with code 7
+[2026-04-10T05:33:07Z] [iter=4] PHASE END: enrich (checkpointed) elapsed_s=172 elapsed_min=2.9 files_completed=2000
